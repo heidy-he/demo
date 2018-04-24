@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8">
+		<title>招聘启事</title>
+		<style type="text/css">
+			body,h2,ul,li{//定义整体的一个格式,从整体到局部,切图技巧很关键
+				margin: 0px;
+				padding: 0px;
+				
+				font-family: arial;
+				color:aqua;
+				list-style: none;  //把li 标签前面的小黑点去掉;
+			}
+			
+			.all{
+				padding-left: 30px;
+				width: 350px;
+				height: 200px;
+				margin: 40px auto;
+				
+			}
+			.head{
+				font-family: "微软雅黑";
+				font-size: 30px;
+				
+				
+				background:url(../img/timg.jpg) no-repeat 5px 3px;//插入背景图片会相对直接在body里面插入图片更方便定位
+				padding-top: 3px;
+				padding-bottom: 3px;
+				padding-left: 50px;
+				border: 2px solid  coral;
+				border-bottom:2px solid coral  ;
+				
+				
+			}
+			.content li{
+				//如果有几行相同格式的字,首先要想到用ul li标签之类的解决,而不是一直加div
+				font-size: 18px;
+				height: 40px;
+				padding-left: 40px;
+				padding-top: 5px;
+				background: url(../img/ph.jpg) no-repeat left top;
+			}
+			.content li a:link,.content li a:visited{
+				color: #FF7F50;
+				text-decoration: none;
+			}
+			.content li a:hover{
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="all">
+			
+			<h2 class="head">招聘信息</h2>
+			<ul class="content">
+				<li><a href="#" >北京****信息科技招聘人才</a></li>
+				<li><a href="#" >上海****科技招聘工程师</a></li>
+				<li><a href="#" >广州****招聘网站管理员才</a></li>
+				<li><a href="#" >深圳****研究所招聘实习生</a></li>
+				<li><a href="#" >江西****科技招聘PHP人才</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
